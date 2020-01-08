@@ -11,6 +11,11 @@ const AddLogModal = () => {
 			M.toast({ html: 'Please Enter a Message and Teh' });
 		} else {
 			console.log(message, tech, attention);
+
+			// Clear fields
+			setMessage('');
+			setTech('');
+			setAttention(false);
 		}
 	};
 
